@@ -27,7 +27,21 @@ data class Repository(
 
 data class RepositoryList(
     @SerializedName("values")
-    val cocktailList: List<Repository> = listOf(),
+    val repositoryList: List<Repository> = listOf(),
     @SerializedName("next")
     val next: String = ""
 )
+
+fun List<RepoEntity>.asRepoList(): List<Repository> = this.map {
+    Repository(it.repoId, it.forkPolicy, it.name, it.language, it.isPrivate, it.description)
+}
+
+fun Repository.asRepoEntity(): RepoEntity =
+    RepoEntity(
+        this.updated_on,
+        this.fork_policy,
+        this.full_name,
+        this.language,
+        this.is_private,
+        this.description
+    )

@@ -13,8 +13,7 @@ import com.binay.testbitrepo.extention.show
 import com.binay.testbitrepo.presentation.OnRepoItemClick
 
 /**
- * Copyright 2021 Payed Pvt. Ltd.
- *
+
  * Created by Binay on 23/5/21.
  */
 class RepoAdapter(
