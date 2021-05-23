@@ -18,8 +18,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Copyright 2021 Payed Pvt. Ltd.
- *
+
  * Created by Binay on 23/5/21.
  */
 @RunWith(AndroidJUnit4::class)
