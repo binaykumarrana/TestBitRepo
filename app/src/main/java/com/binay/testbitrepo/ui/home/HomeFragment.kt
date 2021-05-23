@@ -31,6 +31,7 @@ class HomeFragment : Fragment(R.layout.home_fragment), OnRepoItemClick {
     private lateinit var repoAdapter: RepoAdapter
     private var pageNum: Int = 1
     private val viewModel by activityViewModels<RepoViewModel>()
+    private var isDetailClicked: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         repoAdapter = RepoAdapter(repositoryList, this)
@@ -41,7 +42,8 @@ class HomeFragment : Fragment(R.layout.home_fragment), OnRepoItemClick {
         binding = HomeFragmentBinding.bind(view)
         binding.rvRepository.layoutManager = LinearLayoutManager(requireContext())
         binding.rvRepository.adapter = repoAdapter
-        fetchRepo(AppConstants.NEXT_TEXT)
+        if (!isDetailClicked)
+            fetchRepo(AppConstants.NEXT_TEXT)
         //Next click, only enabled when next it available
         binding.btnNext.setOnClickListener {
             pageNum += 1
@@ -79,6 +81,7 @@ class HomeFragment : Fragment(R.layout.home_fragment), OnRepoItemClick {
     }
 
     override fun onItemClick(repo: Repository) {
+        isDetailClicked = true
         findNavController().navigate(
             HomeFragmentDirections.actionHomeFragmentToDetailsFragment(
                 repo
