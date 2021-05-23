@@ -1,9 +1,10 @@
-package com.binay.testbitrepo
+package com.binay.testbitrepo.ui.details
 
 import androidx.fragment.app.Fragment
+import com.binay.testbitrepo.R
 
 /**
- * Copyright 2021 Payed Pvt. Ltd.
+
  *
  * Created by Binay on 23/5/21.
  */

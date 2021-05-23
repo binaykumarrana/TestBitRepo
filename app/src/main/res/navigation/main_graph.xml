@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.binay.testbitrepo.HomeFragment"
+        android:name="com.binay.testbitrepo.ui.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/home_fragment">
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.binay.testbitrepo.DetailsFragment"
+        android:name="com.binay.testbitrepo.ui.details.DetailsFragment"
         android:label="Details"
         tools:layout="@layout/details_fragment">
 
