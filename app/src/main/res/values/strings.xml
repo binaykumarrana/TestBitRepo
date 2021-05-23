@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestBitRepo</string>
+    <string name="search_no_results">No result found, plz try later!</string>
 </resources>
