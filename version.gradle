@@ -1,0 +1,29 @@
+ext {
+    core_ktx_version = '1.5.0'
+    coroutine_version = '1.3.3'
+    app_compat_version = '1.3.0'
+    constraint_layout_version = '2.0.4'
+    lifecycle_version = '2.2.0'
+    lifecycle_ktx_version = '2.3.0-rc01'
+    multi_dex_version = '1.0.3'
+    navigation_version = '2.3.5'
+
+    //retrofit
+    retrofit_version = '2.9.0'
+    gson_version = '2.8.6'
+    retrofit_gson_version = '2.5.0'
+    retrofit_intecept_version = '3.12.0'
+    //room
+    room_version = '2.3.0'
+    //hilt
+    hilt_version = '2.28.1-alpha'
+    hilt_compile_version = '1.0.0-alpha02'
+    //test
+    junit_version = '4.13.2'
+    junt_ext_version = '1.1.2'
+    espresso_version = '3.3.0'
+    mockito_version = '2.12.1'
+    kotlin_test_version = '1.4.3'
+    arc_core_test = '2.1.0'
+    google_truth = '1.0.1'
+}

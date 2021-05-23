@@ -44,6 +44,8 @@ class HomeFragment : Fragment(R.layout.home_fragment), OnRepoItemClick {
         binding.rvRepository.adapter = repoAdapter
         if (!isDetailClicked)
             fetchRepo(AppConstants.NEXT_TEXT)
+        else
+            binding.btnNext.show()
         //Next click, only enabled when next it available
         binding.btnNext.setOnClickListener {
             pageNum += 1
